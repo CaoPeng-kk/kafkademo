@@ -35,9 +35,6 @@ public class Consumer {
         //
         kafkaProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         //
-        kafkaProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-
-
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer(kafkaProperties);
 
         // 订阅topic
